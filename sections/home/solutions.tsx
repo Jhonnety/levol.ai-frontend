@@ -8,7 +8,7 @@ import React from 'react'
 
 export const Solutions = () => {
   return (
-<section className="py-20 px-4 relative">
+<section className="py-20 px-4 relative" id='solutions'>
         <div className="absolute inset-0 bg-gradient-radial from-accent/5 to-transparent"></div>
         <div className="container mx-auto max-w-6xl relative z-10">
           <AnimatedElement type="fade" direction="up">

@@ -6,6 +6,8 @@ import Image from "next/image"
 import { AnimatedText } from '@/components/animated-text';
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from 'lucide-react';
+import brain from "../../assets/images/brain2.jpg"
+
 
 export const Introduction = () => {
     return (
@@ -59,7 +61,14 @@ export const Introduction = () => {
                                         <ArrowRight className="ml-2 h-4 w-4" />
                                     </motion.span>
                                 </Button>
-                                <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent/10">
+                                <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent/10"
+                                    onClick={() => {
+                                        const solutionsSection = document.getElementById('solutions');
+                                        if (solutionsSection) {
+                                            solutionsSection.scrollIntoView({ behavior: 'smooth' });
+                                        }
+                                    }}
+                                >
                                     Explore Solutions
                                 </Button>
                             </motion.div>
@@ -67,7 +76,7 @@ export const Introduction = () => {
                     </AnimatedElement>
 
                     <AnimatedElement type="fade" direction="up" delay={0.5}>
-                        <div className="relative">
+                        <div className="relative hidden lg:block" >
                             <div className="absolute -top-20 -right-20 w-64 h-64 bg-accent/30 rounded-full blur-3xl animate-pulse-slow"></div>
                             <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-cyan-500/30 rounded-full blur-3xl animate-pulse-slow animation-delay-1000"></div>
                             <motion.div
@@ -77,9 +86,9 @@ export const Introduction = () => {
                             >
                                 <GradientBorder className="rounded-2xl overflow-hidden">
                                     <Image
-                                        src="/placeholder.svg?height=500&width=600"
+                                        src={brain}
                                         alt="Levol.ia Platform"
-                                        width={600}
+                                        width={500}
                                         height={500}
                                         className="w-full h-auto rounded-2xl"
                                     />
