@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import { GlassMorphicCard } from "./glassmorphic-card"
 import { Button } from "./ui/button"
 import { ArrowRight, Check } from "lucide-react"
+import { useRouter } from "next/navigation" //
 
 interface EnhancedSolutionCardProps {
   title: string
@@ -14,6 +15,7 @@ interface EnhancedSolutionCardProps {
   gradient: string
   features: string[]
   className?: string
+  link?: string
 }
 
 export function EnhancedSolutionCard({
@@ -23,7 +25,15 @@ export function EnhancedSolutionCard({
   gradient,
   features,
   className,
+  link
 }: EnhancedSolutionCardProps) {
+  const router = useRouter()
+
+  const handleLearnMore = () => {
+    if (link) {
+      router.push(link)
+    }
+  }
   return (
     <GlassMorphicCard
       className={cn(
@@ -72,6 +82,7 @@ export function EnhancedSolutionCard({
           <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
             <Button
               variant="outline"
+              onClick={handleLearnMore}
               className="w-full border-accent text-accent hover:bg-accent/10 group-hover:bg-accent group-hover:text-white transition-colors"
             >
               Learn More
