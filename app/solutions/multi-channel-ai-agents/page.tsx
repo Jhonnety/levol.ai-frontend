@@ -256,29 +256,29 @@ export default function MultiChannelAIAgentsPage() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="flex flex-col items-center">
-                <div className="bg-green-500/20 relative w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center">
-                  <IconWhatsapp className="w-10 h-10 text-green-200" />
+                <div className="bg-gradient-to-r from-accent to-purple-400 relative w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center">
+                  <IconWhatsapp className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="mt-4 font-medium">WhatsApp</h3>
                 <p className="text-sm text-muted-foreground text-center mt-1">Business API Integration</p>
               </div>
               <div className="flex flex-col items-center">
-                <div className="bg-pink-500/20 relative w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center">
-                  <IconInstagram className="w-10 h-10 text-pink-200" />
+                <div className="bg-gradient-to-r from-cyan-400 to-blue-400 relative w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center">
+                  <IconInstagram className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="mt-4 font-medium">Instagram</h3>
                 <p className="text-sm text-muted-foreground text-center mt-1">DM & Comment Management</p>
               </div>
               <div className="flex flex-col items-center">
-                <div className="bg-blue-500/20 relative w-20 h-20 rounded-2xl p-0 m-0  flex items-center justify-center">
-                  <IconFacebook className="w-10 h-10 text-blue-200 text-center" />
+                <div className="bg-gradient-to-r from-blue-400 to-indigo-400 relative w-20 h-20 rounded-2xl p-0 m-0  flex items-center justify-center">
+                  <IconFacebook className="w-10 h-10 text-white text-center" />
                 </div>
                 <h3 className="mt-4 font-medium">Facebook</h3>
                 <p className="text-sm text-muted-foreground text-center mt-1">Messenger & Comments</p>
               </div>
               <div className="flex flex-col items-center">
-                <div className="bg-black/20 relative w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center">
-                  <IconTiktok className="w-10 h-10 text-black-200" />
+                <div className="bg-gradient-to-r from-indigo-400 to-accent relative w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center">
+                  <IconTiktok className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="mt-4 font-medium">TikTok</h3>
                 <p className="text-sm text-muted-foreground text-center mt-1">Comment Management</p>
