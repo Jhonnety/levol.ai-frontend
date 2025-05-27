@@ -20,9 +20,9 @@ import { ParticleBackground } from "@/components/particle-background"
 import { Navbar } from "@/components/navbar"
 import { ScheduleSession } from "@/components/schedule-session"
 import { FeatureCard } from "@/components/feature-card"
-import { IntegrationLogo } from "@/components/integration-logo"
 import { PlatformBadge } from "@/components/platform-badge"
 import { SolutionHeader } from "@/components/solution-header"
+import { IconTiktok, IconFacebook, IconInstagram, IconWhatsapp } from "@/components/icons"
 
 export default function MultiChannelAIAgentsPage() {
   return (
@@ -256,22 +256,30 @@ export default function MultiChannelAIAgentsPage() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="flex flex-col items-center">
-                <IntegrationLogo name="WhatsApp" logo="/placeholder.svg?height=80&width=80" color="bg-green-500/20" />
+                <div className="bg-green-500/20 relative w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center">
+                  <IconWhatsapp className="w-10 h-10 text-green-200" />
+                </div>
                 <h3 className="mt-4 font-medium">WhatsApp</h3>
                 <p className="text-sm text-muted-foreground text-center mt-1">Business API Integration</p>
               </div>
               <div className="flex flex-col items-center">
-                <IntegrationLogo name="Instagram" logo="/placeholder.svg?height=80&width=80" color="bg-pink-500/20" />
+                <div className="bg-pink-500/20 relative w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center">
+                  <IconInstagram className="w-10 h-10 text-pink-200" />
+                </div>
                 <h3 className="mt-4 font-medium">Instagram</h3>
                 <p className="text-sm text-muted-foreground text-center mt-1">DM & Comment Management</p>
               </div>
               <div className="flex flex-col items-center">
-                <IntegrationLogo name="Facebook" logo="/placeholder.svg?height=80&width=80" color="bg-blue-500/20" />
+                <div className="bg-blue-500/20 relative w-20 h-20 rounded-2xl p-0 m-0  flex items-center justify-center">
+                  <IconFacebook className="w-10 h-10 text-blue-200 text-center" />
+                </div>
                 <h3 className="mt-4 font-medium">Facebook</h3>
                 <p className="text-sm text-muted-foreground text-center mt-1">Messenger & Comments</p>
               </div>
               <div className="flex flex-col items-center">
-                <IntegrationLogo name="TikTok" logo="/placeholder.svg?height=80&width=80" color="bg-black/20" />
+                <div className="bg-black/20 relative w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center">
+                  <IconTiktok className="w-10 h-10 text-black-200" />
+                </div>
                 <h3 className="mt-4 font-medium">TikTok</h3>
                 <p className="text-sm text-muted-foreground text-center mt-1">Comment Management</p>
               </div>
