@@ -13,6 +13,7 @@ import {
   Workflow,
 } from "lucide-react"
 
+import flow from "../../../assets/images/flow1.png"
 import { Button } from "@/components/ui/button"
 import { GlassMorphicCard } from "@/components/glassmorphic-card"
 import { GradientBorder } from "@/components/gradient-border"
@@ -98,7 +99,7 @@ export default function MultiChannelAIAgentsPage() {
               <div className="absolute -top-20 -right-20 w-64 h-64 bg-accent/30 rounded-full blur-3xl"></div>
               <GradientBorder className="rounded-2xl overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src={flow}
                   alt="Multi-Channel AI Agents Dashboard"
                   width={600}
                   height={400}

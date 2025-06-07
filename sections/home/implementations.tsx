@@ -7,6 +7,10 @@ import { motion } from 'framer-motion'
 import { GlassMorphicCard } from '@/components/glassmorphic-card'
 import Image from "next/image"
 import { ArrowRight } from 'lucide-react'
+import flow1 from "../../assets/images/flow1.png"
+import flow2 from "../../assets/images/flow2.webp"
+import flow3 from "../../assets/images/flow3.webp"
+import flow4 from "../../assets/images/flow4.webp"
 
 export const Implementations = () => {
   return (
@@ -35,7 +39,7 @@ export const Implementations = () => {
               <GlassMorphicCard className="h-full transition-all duration-300 group-hover:shadow-[0_10px_40px_rgba(117,78,249,0.2)] overflow-hidden">
                 <div className="relative h-64 overflow-hidden rounded-t-xl">
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src={flow1}
                     alt="Omnichannel AI Agent Architecture"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -92,7 +96,7 @@ export const Implementations = () => {
               <GlassMorphicCard className="h-full transition-all duration-300 group-hover:shadow-[0_10px_40px_rgba(0,240,255,0.2)] overflow-hidden">
                 <div className="relative h-64 overflow-hidden rounded-t-xl">
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src={flow2}
                     alt="n8n Workflow Automation"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -149,7 +153,7 @@ export const Implementations = () => {
               <GlassMorphicCard className="h-full transition-all duration-300 group-hover:shadow-[0_10px_40px_rgba(255,105,180,0.2)] overflow-hidden">
                 <div className="relative h-64 overflow-hidden rounded-t-xl">
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src={flow3}
                     alt="Predictive Sales Analytics"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -206,7 +210,7 @@ export const Implementations = () => {
               <GlassMorphicCard className="h-full transition-all duration-300 group-hover:shadow-[0_10px_40px_rgba(72,187,120,0.2)] overflow-hidden">
                 <div className="relative h-64 overflow-hidden rounded-t-xl">
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src={flow4}
                     alt="Intelligent Document Processing"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
