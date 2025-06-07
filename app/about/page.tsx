@@ -318,19 +318,20 @@ export default function AboutPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6"
           >
             {[
               {
-                name: "Alex Morgan",
-                role: "CEO & Co-Founder",
-                bio: "AI researcher with 15+ years of experience in machine learning and business transformation.",
+                name: "Jhon Esteban Velasquez GOmez",
+                role: "CEO & Founder",
+                bio: "AI researcher with 2+ years of experience in machine learning and business transformation.",
               },
               {
-                name: "Sophia Chen",
-                role: "CTO & Co-Founder",
+                name: "Juan Esteban Paja Montoya",
+                role: "Developer AI",
                 bio: "Former lead engineer at a major tech company with expertise in NLP and machine learning systems.",
               },
+              /* 
               {
                 name: "Marcus Johnson",
                 role: "Chief Product Officer",
@@ -340,7 +341,7 @@ export default function AboutPage() {
                 name: "Olivia Martinez",
                 role: "Chief Customer Officer",
                 bio: "Customer experience expert with a passion for helping businesses achieve their goals through technology.",
-              },
+              }, */
             ].map((member, index) => (
               <motion.div
                 key={index}
