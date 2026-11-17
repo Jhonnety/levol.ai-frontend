@@ -9,6 +9,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async rewrites() {
+    return [
+      { source: '/agentes-que-no-mienten', destination: '/agentes-que-no-mienten/index.html' },
+    ]
+  },
 }
 
 export default nextConfig
