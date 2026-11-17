@@ -16,7 +16,7 @@ const botonCompra = COMPRAR_URL
   : `<span class="btn p" aria-disabled="true" role="link">Próximamente</span>`
 
 export default function AgentesQueNoMienten() {
-  const html = LANDING_BODY.replace("@@COMPRAR@@", botonCompra)
+  const html = LANDING_BODY.replace("@@COMPRAR@@", botonCompra).replaceAll("@@URL@@", COMPRAR_URL || "#precios")
   return (
     <div lang="es" className="agentes-landing">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
